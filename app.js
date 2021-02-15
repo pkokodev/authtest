@@ -29,13 +29,6 @@ app.get('/', (req, res, next) =>{
   res.send("welcome")
 })
 
-app.get('/register', (req, res, next) =>{
-    res.render('register')
-})
-app.post('/register', (req, res, next) =>{
-    console.log(req.body)
-    res.send(req.body)
-})
 
 
 const port = process.env.PORT || 3000
